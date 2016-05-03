@@ -39,6 +39,7 @@ function HE_init(){
 		<li><a href="'.get_admin_url().'?page=HaberEditoru&t=bot" class="'; if ($HE_Tab=="bot"){echo "current";} echo '">'. __("Bot Yönetimi","HaberEditoru"). '</a></li>
 		<li><a href="'.get_admin_url().'?page=HaberEditoru&t=ayarlar" class="'; if ($HE_Tab=="ayarlar"){echo "current";} echo '" id="ayar">'. __("İçerik Kaynakları","HaberEditoru"). '</a></li>
 		<li><a href="'.get_admin_url().'?page=HaberEditoru&t=kategori_eslestirme" class="'; if ($HE_Tab=="kategori_eslestirme"){echo "current";} echo '">'. __("Kategori Eşleştirme","HaberEditoru"). '</a></li>
+		<li><a href="'.get_admin_url().'?page=HaberEditoru&t=raporlar" class="'; if ($HE_Tab=="raporlar"){echo "current";} echo '">'. __("Raporlar","HaberEditoru"). '</a></li>
 		<li><a href="'.get_admin_url().'?page=HaberEditoru&t=logs" class="'; if ($HE_Tab=="logs"){echo "current";} echo '">'. __("Aktiviteler","HaberEditoru"). '</a></li>
 		<li><a href="'.get_admin_url().'?page=HaberEditoru&t=abonelik" class="'; if ($HE_Tab=="abonelik"){echo "current ";} echo '">'. __("Abonelik","HaberEditoru"). '</a></li>
 		<li class="he-time"><a href="'.get_admin_url().'?page=HaberEditoru&t=abonelik">'.he_lastdate_write(date_format(date_create(HE_END_DATE),"Y-m-d")).'</a></li>
@@ -53,6 +54,8 @@ function HE_init(){
 		include_once "inc/genel_ayarlar.php";
 	}elseif($HE_Tab == "kategori_eslestirme"){
 		include_once "inc/kategori_eslestirme.php";
+	}elseif($HE_Tab == "raporlar"){
+		include_once "inc/raporlar.php";
 	}elseif($HE_Tab == "logs"){
 		include_once "inc/logs.php";
 	}elseif($HE_Tab == "abonelik"){

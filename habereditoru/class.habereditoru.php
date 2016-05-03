@@ -108,8 +108,7 @@ class HaberEditoru {
 		$menu_id = 'HaberEditoru';
 		$wp_admin_bar->add_menu(array('id' => $menu_id, 'title' => '<img style="vertical-align: text-bottom;" src="'.plugin_dir_url( __FILE__ ).'/img/icon.png'.'"></img> Haber Botu', 'href' => '#' , 'meta' => array('class' => '') ));
 		$wp_admin_bar->add_menu(array('parent' => $menu_id, 'title' => __('Bot Yönetimi','HaberEditoru'), 'id' => 'he-robotlar', 'href' => get_admin_url() . '?page=HaberEditoru&t=bot', 'meta' => array('class' => 'first-toolbar-group')));
-		$wp_admin_bar->add_menu(array('parent' => $menu_id, 'title' => __('İçerik Kaynakları','HaberEditoru'), 'id' => 'he-websettings', 'href' => get_admin_url() .'?page=HaberEditoru&t=ayarlar'));
-		$wp_admin_bar->add_menu(array('parent' => $menu_id, 'title' => __('Kategori Eşleştirme','HaberEditoru'), 'id' => 'he-categories', 'href' => get_admin_url() .'?page=HaberEditoru&t=kategori_eslestirme'));
+		$wp_admin_bar->add_menu(array('parent' => $menu_id, 'title' => __('Raporlar','HaberEditoru'), 'id' => 'he-raporlar', 'href' => get_admin_url() .'?page=HaberEditoru&t=raporlar'));
 		$wp_admin_bar->add_menu(array('parent' => $menu_id, 'title' => __('Aktiviteler','HaberEditoru'), 'id' => 'he-logs', 'href' => get_admin_url() .'?page=HaberEditoru&t=logs'));
 		$wp_admin_bar->add_menu(array('parent' => $menu_id, 'title' => __('Abonelik ve Ödeme','HaberEditoru'), 'id' => 'he-member', 'href' => get_admin_url() .'?page=HaberEditoru&t=abonelik'));
 	}
