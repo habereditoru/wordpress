@@ -15,12 +15,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 if ( ! class_exists( 'habereditoru' ) ) :
 
-    /*
-    TODO
-    SISTEM SAATI FIX
-    TAB REMOVE BOT ADD
-    KATEGORI ESLESTIRME SAYFASI FIX
-    */
 
 final class habereditoru
 {
