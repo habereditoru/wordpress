@@ -1,6 +1,6 @@
 <?php
 /*
-	Plugin Name: habereditoru.com Haber Botu (New)
+	Plugin Name: habereditoru.com - Haber Botu
 	Plugin URI: http://www.habereditoru.com
 	Version: 1.0.0
 	Author: habereditoru.com
